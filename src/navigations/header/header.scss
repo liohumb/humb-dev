@@ -1,0 +1,26 @@
+@use "src/assets/styles/variables" as v;
+
+.header {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 3;
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 0;
+
+    &-link {
+      font-size: 4.25rem;
+      color: v.$light-color;
+      opacity: .25;
+      transition: all .7s ease;
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+}
