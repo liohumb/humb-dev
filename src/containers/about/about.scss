@@ -1,5 +1,131 @@
 @use "src/assets/styles/variables" as v;
 
 .about {
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    &-left {
+      width: 40%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    &-right {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 5%;
+      color: v.$light-color;
+      padding: 0 10% 0 0;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 10%;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 5.5rem;
+
+    @media (max-width: 1024px) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 4.75rem;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 3.5rem;
+    }
+
+    & br {
+      display: none;
+
+
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+
+    & span {
+      opacity: .25;
+      margin: 0 1rem 0 0;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2.25rem;
+    opacity: .5;
+    word-spacing: 1.5rem;
+
+    @media (max-width: 1024px) {
+      font-size: 2rem;
+      word-spacing: 0;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.75rem;
+      word-spacing: 1rem;
+    }
+  }
+
+  &__description {
+    font-size: 2rem;
+    opacity: .75;
+
+    @media (max-width: 1024px) {
+      font-size: 1.75rem;
+    }
+
+    &-long {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &-short {
+      display: none;
+
+      @media (max-width: 768px) {
+        display: block;
+      }
+
+      @media (max-width: 425px) {
+        display: none;
+      }
+    }
+  }
+
+  &__work {
+    width: 15rem;
+    height: 5.5rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    background: rgba(0, 0, 0, .25);
+    border-radius: .75rem;
+    transition: all .7s ease;
+
+    &:hover {
+      font-size: 1.55rem;
+      letter-spacing: .1rem;
+      background: v.$background-color;
+    }
+  }
 }
