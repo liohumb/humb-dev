@@ -26,75 +26,125 @@
   &__subtitle {
     width: 100%;
     position: relative;
-    font-size: 7rem;
+    font-size: 5.5rem;
     color: v.$first-color-light;
     line-height: 5rem;
+
+    @media (max-width: 1024px) {
+      line-height: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      line-height: 2.5rem;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 2.75rem;
+      line-height: 1.5rem;
+    }
 
     &-h {
       position: absolute;
       animation: moveLetter .2s linear infinite;
       animation-delay: .9s;
+      margin: 0 -1rem 0 0;
     }
 
     &-e {
       position: absolute;
-      left: 3.5rem;
+      left: 3rem;
       animation: moveLetter .2s linear infinite;
       animation-delay: .2s;
+
+      @media (max-width: 425px) {
+        left: 1.5rem;
+      }
     }
 
     &-l {
       position: absolute;
-      left: 7rem;
+      left: 6rem;
       animation: moveLetter .2s linear infinite;
       animation-delay: .25s;
+
+      @media (max-width: 425px) {
+        left: 3rem;
+      }
     }
 
     &-ll {
       position: absolute;
-      left: 8.5rem;
+      left: 7.25rem;
       animation: moveLetter .2s linear infinite;
       animation-delay: .1s;
+
+      @media (max-width: 425px) {
+        left: 3.75rem;
+      }
     }
 
     &-o {
       position: absolute;
-      left: 10rem;
+      left: 8.5rem;
       animation: moveLetter .2s linear infinite;
       animation-delay: .9s;
+
+      @media (max-width: 425px) {
+        left: 4.5rem;
+      }
     }
 
     &-virgule {
       position: absolute;
-      left: 13.5rem;
+      left: 11.75rem;
       animation: moveLetter .2s linear infinite;
+
+      @media (max-width: 425px) {
+        left: 6.25rem;
+      }
     }
 
     &-emoji {
       position: absolute;
-      left: 17rem;
+      left: 14rem;
       animation: moveLetter .2s linear infinite;
       animation-delay: .4s;
+
+      @media (max-width: 425px) {
+        left: 7.5rem;
+      }
     }
 
     &-i {
       position: absolute;
-      left: 25.5rem;
+      left: 21.25rem;
       animation: moveLetter .2s linear infinite;
       animation-delay: .9s;
+
+      @media (max-width: 425px) {
+        left: 11.5rem;
+      }
     }
 
     &-apos {
       position: absolute;
-      left: 27.5rem;
+      left: 23rem;
       animation: moveLetter .2s linear infinite;
       animation-delay: .2s;
+
+      @media (max-width: 425px) {
+        left: 12.5rem;
+      }
     }
 
     &-m {
       position: absolute;
-      left: 29rem;
+      left: 24rem;
       animation: moveLetter .2s linear infinite;
+
+      @media (max-width: 425px) {
+        left: 13rem;
+      }
     }
 
     @keyframes moveLetter {
@@ -112,9 +162,23 @@
 
   &__title {
     width: 100%;
-    font-size: 9rem;
+    font-size: 7rem;
     color: v.$light-color;
     line-height: 13rem;
+
+    @media (max-width: 1024px) {
+      font-size: 5.5rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 4.25rem;
+      line-height: 7rem;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 3.5rem;
+      line-height: 5.75rem;
+    }
 
     & span {
       opacity: .2;
