@@ -62,5 +62,12 @@
         transform: scale(1.05);
       }
     }
+
+    & span {
+      font-size: 2rem;
+      color: v.$light-color;
+      opacity: .75;
+      padding: 2rem 0;
+    }
   }
 }
