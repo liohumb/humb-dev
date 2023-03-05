@@ -18,8 +18,16 @@
       opacity: .25;
       transition: all .7s ease;
 
+      @media (max-width: 768px) {
+        opacity: .75;
+      }
+
       &:hover {
         opacity: .75;
+
+        @media (max-width: 768px) {
+          opacity: 1;
+        }
       }
     }
   }

@@ -346,8 +346,6 @@ const brands45= [...brands]
 const brands46= [...brands]
 const brands47= [...brands]
 const brands48= [...brands]
-const brands49= [...brands]
-const brands50= [...brands]
 
 shuffle(brands1)
 shuffle(brands2)
@@ -397,10 +395,8 @@ shuffle(brands45)
 shuffle(brands46)
 shuffle(brands47)
 shuffle(brands48)
-shuffle(brands49)
-shuffle(brands50)
 
-export const logos = [
+export const logos2560 = [
     ...brands1,
     ...brands2,
     ...brands3,
@@ -448,7 +444,59 @@ export const logos = [
     ...brands45,
     ...brands46,
     ...brands47,
-    ...brands48,
-    ...brands49,
-    ...brands50
+    ...brands48
+]
+
+export const logos1440 = [
+    ...brands1,
+    ...brands2,
+    ...brands3,
+    ...brands4,
+    ...brands5,
+    ...brands6,
+    ...brands7,
+    ...brands8,
+    ...brands9,
+    ...brands10,
+    ...brands11,
+    ...brands12,
+    ...brands13,
+    ...brands14,
+    ...brands15,
+    ...brands16,
+    ...brands17,
+    ...brands18,
+    ...brands19
+]
+
+export const logos1024 = [
+    ...brands1,
+    ...brands2,
+    ...brands3,
+    ...brands4,
+    ...brands5,
+    ...brands6,
+    ...brands7,
+    ...brands8,
+    ...brands9,
+    ...brands10,
+    ...brands11,
+    ...brands12,
+    ...brands13
+]
+
+export const logos768 = [
+    ...brands1,
+    ...brands2,
+    ...brands3,
+    ...brands4,
+    ...brands5,
+    ...brands6,
+    ...brands7,
+    ...brands8,
+    ...brands9
+]
+
+export const logos425 = [
+    ...brands1
 ]

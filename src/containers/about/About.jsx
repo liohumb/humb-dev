@@ -1,10 +1,14 @@
+import Computer from '../../components/computer/Computer.jsx'
+
 import './about.scss'
 
 export default function About() {
     return (
         <section className="about section">
             <div className="about__container">
-                <div className="about__container-left"></div>
+                <div className="about__container-left">
+                    <Computer/>
+                </div>
                 <div className="about__container-right">
                     <h1 className="about__title">
                         Dev<span>.</span>
