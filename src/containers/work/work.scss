@@ -8,19 +8,28 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+
     &-left,
     &-right {
       width: 100%;
+      height: 100%;
     }
 
     &-left {
       display: grid;
       place-items: center;
+
+      @media (max-width: 768px) {
+        height: 70%;
+      }
     }
 
     &-right {
       @media (max-width: 768px) {
-      display: none;
+        height: 30%;
       }
     }
   }
@@ -34,8 +43,10 @@
     &-name {
       position: relative;
       font-size: 5.5rem;
+      font-weight: 900;
       color: transparent;
       -webkit-text-stroke: .1rem v.$light-color;
+      cursor: default;
 
       @media (max-width: 1024px) {
         font-size: 4rem;
