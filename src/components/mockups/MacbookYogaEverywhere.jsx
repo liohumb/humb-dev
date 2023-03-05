@@ -1,12 +1,8 @@
 import React, { useRef } from 'react'
-import {useThree} from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/models/macbookYogaEverywhere-transformed.glb')
-    const {camera} = useThree()
-
-    camera.position.set(0, 0, 5)
 
   return (
     <group {...props} rotation={[-Math.PI / -.1, -.5, 0]}>

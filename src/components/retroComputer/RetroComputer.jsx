@@ -1,18 +1,14 @@
 import React, {useRef} from 'react'
-import {useFrame, useThree} from '@react-three/fiber'
+import {useFrame} from '@react-three/fiber'
 import {useGLTF} from '@react-three/drei'
 
 export default function Model(props) {
     const groupRef = useRef()
     const {nodes, materials} = useGLTF('/models/retroComputer-transformed.glb')
 
-    const {camera} = useThree()
-
     useFrame(() => {
         groupRef.current.rotation.y += -.001
     })
-
-    camera.position.set(0, 1, 2.5)
 
     return (
         <group ref={groupRef} {...props}>
