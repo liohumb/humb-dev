@@ -4,7 +4,7 @@ import './about.scss'
 
 export default function About() {
     return (
-        <section className="about section">
+        <section className="about section" id="about">
             <div className="about__container">
                 <div className="about__container-left">
                     <Computer/>

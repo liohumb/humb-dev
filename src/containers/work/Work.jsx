@@ -15,7 +15,7 @@ export default function Work() {
     const [show, setShow] = useState("Les Ailes de Pégase")
 
     return (
-        <section className="work section">
+        <section className="work section" id="work">
             <div className="work__container">
                 <div className="work__container-left">
                     <ul className="work__content">
