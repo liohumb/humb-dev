@@ -1,502 +1,297 @@
-import { shuffle } from '../utils'
-
-const brands = [
+export const brands = [
     {
         id: 1,
         name: 'After Effects',
-        url: './images/brands/after-effects.png'
+        url: '/images/brands/after-effects.webp'
     },
     {
         id: 2,
         name: 'Angular',
-        url: './images/brands/angular.png'
+        url: '/images/brands/angular.webp'
     },
     {
         id: 3,
         name: 'Api Platform',
-        url: './images/brands/api-platform.png'
+        url: '/images/brands/api-platform.webp'
     },
     {
         id: 4,
         name: 'Apple',
-        url: './images/brands/apple.png'
+        url: '/images/brands/apple.webp'
     },
     {
         id: 5,
         name: 'Blender',
-        url: './images/brands/blender.png'
+        url: '/images/brands/blender.webp'
     },
     {
         id: 6,
         name: 'Composer',
-        url: './images/brands/composer.png'
+        url: '/images/brands/composer.webp'
     },
     {
         id: 7,
         name: 'CSS',
-        url: './images/brands/css.png'
+        url: '/images/brands/css.webp'
     },
     {
         id: 8,
         name: 'Data Grip',
-        url: './images/brands/data-grip.png'
+        url: '/images/brands/data-grip.webp'
     },
     {
         id: 9,
         name: 'Debian',
-        url: './images/brands/debian.png'
+        url: '/images/brands/debian.webp'
     },
     {
         id: 10,
         name: 'Discord',
-        url: './images/brands/discord.png'
+        url: '/images/brands/discord.webp'
     },
     {
         id: 11,
         name: 'Figma',
-        url: './images/brands/figma.png'
+        url: '/images/brands/figma.webp'
     },
     {
         id: 12,
         name: 'Git',
-        url: './images/brands/git.png'
+        url: '/images/brands/git.webp'
     },
     {
         id: 13,
         name: 'GitHub',
-        url: './images/brands/github.png'
+        url: '/images/brands/github.webp'
     },
     {
         id: 14,
         name: 'Google Chrome',
-        url: './images/brands/google-chrome.png'
+        url: '/images/brands/google-chrome.webp'
     },
     {
         id: 15,
         name: 'GSAP',
-        url: './images/brands/gsap.png'
+        url: '/images/brands/gsap.webp'
     },
     {
         id: 16,
         name: 'Heroku',
-        url: './images/brands/heroku.png'
+        url: '/images/brands/heroku.webp'
     },
     {
         id: 17,
         name: 'HTML',
-        url: './images/brands/html.png'
+        url: '/images/brands/html.webp'
     },
     {
         id: 18,
         name: 'Illustrator',
-        url: './images/brands/illustrator.png'
+        url: '/images/brands/illustrator.webp'
     },
     {
         id: 19,
         name: 'IntelliJ',
-        url: './images/brands/intellij.png'
+        url: '/images/brands/intellij.webp'
     },
     {
         id: 20,
         name: 'Iterm',
-        url: './images/brands/iterm.png'
+        url: '/images/brands/iterm.webp'
     },
     {
         id: 21,
         name: 'JavaScript',
-        url: './images/brands/javascript.png'
+        url: '/images/brands/javascript.webp'
     },
     {
         id: 22,
         name: 'JetBrains',
-        url: './images/brands/jetbrains.png'
+        url: '/images/brands/jetbrains.webp'
     },
     {
         id: 23,
         name: 'Logic Pro',
-        url: './images/brands/logic-pro.png'
+        url: '/images/brands/logic-pro.webp'
     },
     {
         id: 24,
         name: 'MailChimp',
-        url: './images/brands/mailchimp.png'
+        url: '/images/brands/mailchimp.webp'
     },
     {
         id: 25,
         name: 'MailJet',
-        url: './images/brands/mailjet.png'
+        url: '/images/brands/mailjet.webp'
     },
     {
         id: 26,
         name: 'Mamp',
-        url: './images/brands/mamp.png'
+        url: '/images/brands/mamp.webp'
     },
     {
         id: 27,
         name: 'MongoDB',
-        url: './images/brands/mongodb.png'
+        url: '/images/brands/mongodb.webp'
     },
     {
         id: 28,
         name: 'MySql',
-        url: './images/brands/mysql.png'
+        url: '/images/brands/mysql.webp'
     },
     {
         id: 29,
         name: 'Next',
-        url: './images/brands/next.png'
+        url: '/images/brands/next.webp'
     },
     {
         id: 30,
         name: 'Node',
-        url: './images/brands/node.png'
+        url: '/images/brands/node.webp'
     },
     {
         id: 31,
         name: 'Node Mailer',
-        url: './images/brands/node-mailer.png'
+        url: '/images/brands/node-mailer.webp'
     },
     {
         id: 32,
         name: 'Notion',
-        url: './images/brands/notion.png'
+        url: '/images/brands/notion.webp'
     },
     {
         id: 33,
         name: 'NPM',
-        url: './images/brands/npm.png'
+        url: '/images/brands/npm.webp'
     },
     {
         id: 34,
         name: 'Parcel',
-        url: './images/brands/parcel.png'
+        url: '/images/brands/parcel.webp'
     },
     {
         id: 35,
         name: 'Paypal',
-        url: './images/brands/paypal.png'
+        url: '/images/brands/paypal.webp'
     },
     {
         id: 36,
         name: 'Photoshop',
-        url: './images/brands/photoshop.png'
+        url: '/images/brands/photoshop.webp'
     },
     {
         id: 37,
         name: 'PHP',
-        url: './images/brands/php.png'
+        url: '/images/brands/php.webp'
     },
     {
         id: 38,
         name: 'PhpStorm',
-        url: './images/brands/phpstorm.png'
+        url: '/images/brands/phpstorm.webp'
     },
     {
         id: 39,
         name: 'PostMan',
-        url: './images/brands/postman.png'
+        url: '/images/brands/postman.webp'
     },
     {
         id: 40,
         name: 'Premiere Pro',
-        url: './images/brands/premiere-pro.png'
+        url: '/images/brands/premiere-pro.webp'
     },
     {
         id: 41,
         name: 'React',
-        url: './images/brands/react.png'
+        url: '/images/brands/react.webp'
     },
     {
         id: 42,
         name: 'React Native',
-        url: './images/brands/react-native.png'
+        url: '/images/brands/react-native.webp'
     },
     {
         id: 43,
         name: 'SASS',
-        url: './images/brands/sass.png'
+        url: '/images/brands/sass.webp'
     },
     {
         id: 44,
         name: 'Send Grid',
-        url: './images/brands/sendgrid.png'
+        url: '/images/brands/sendgrid.webp'
     },
     {
         id: 45,
         name: 'Simulator',
-        url: './images/brands/simulator.png'
+        url: '/images/brands/simulator.webp'
     },
     {
         id: 46,
         name: 'Slack',
-        url: './images/brands/slack.png'
+        url: '/images/brands/slack.webp'
     },
     {
         id: 47,
         name: 'Strapi',
-        url: './images/brands/strapi.png'
+        url: '/images/brands/strapi.webp'
     },
     {
         id: 48,
         name: 'Stripe',
-        url: './images/brands/stripe.png'
+        url: '/images/brands/stripe.webp'
     },
     {
         id: 49,
         name: 'Symfony',
-        url: './images/brands/symfony.png'
+        url: '/images/brands/symfony.webp'
     },
     {
         id: 50,
         name: 'Teams',
-        url: './images/brands/teams.png'
+        url: '/images/brands/teams.webp'
     },
     {
         id: 51,
         name: 'Terminal',
-        url: './images/brands/terminal.png'
+        url: '/images/brands/terminal.webp'
     },
     {
         id: 52,
         name: 'Three',
-        url: './images/brands/three.png'
+        url: '/images/brands/three.webp'
     },
     {
         id: 53,
         name: 'TypeScript',
-        url: './images/brands/typescript.png'
+        url: '/images/brands/typescript.webp'
     },
     {
         id: 54,
         name: 'Vercel',
-        url: './images/brands/vercel.png'
+        url: '/images/brands/vercel.webp'
     },
     {
         id: 55,
         name: 'Vite',
-        url: './images/brands/vite.png'
+        url: '/images/brands/vite.webp'
     },
     {
         id: 56,
         name: 'Vue',
-        url: './images/brands/vue.png'
+        url: '/images/brands/vue.webp'
     },
     {
         id: 57,
         name: 'WebPack',
-        url: './images/brands/webpack.png'
+        url: '/images/brands/webpack.webp'
     },
     {
         id: 58,
         name: 'WebStorm',
-        url: './images/brands/webstorm.png'
+        url: '/images/brands/webstorm.webp'
     },
     {
         id: 59,
         name: 'Xcode',
-        url: './images/brands/xcode.png'
+        url: '/images/brands/xcode.webp'
     },
-]
-
-const brands1 = [...brands]
-const brands2 = [...brands]
-const brands3 = [...brands]
-const brands4 = [...brands]
-const brands5 = [...brands]
-const brands6 = [...brands]
-const brands7 = [...brands]
-const brands8 = [...brands]
-const brands9 = [...brands]
-const brands10 = [...brands]
-const brands11 = [...brands]
-const brands12 = [...brands]
-const brands13= [...brands]
-const brands14 = [...brands]
-const brands15 = [...brands]
-const brands16 = [...brands]
-const brands17 = [...brands]
-const brands18= [...brands]
-const brands19= [...brands]
-const brands20= [...brands]
-const brands21= [...brands]
-const brands22= [...brands]
-const brands23= [...brands]
-const brands24= [...brands]
-const brands25= [...brands]
-const brands26= [...brands]
-const brands27= [...brands]
-const brands28= [...brands]
-const brands29= [...brands]
-const brands30= [...brands]
-const brands31= [...brands]
-const brands32= [...brands]
-const brands33= [...brands]
-const brands34= [...brands]
-const brands35= [...brands]
-const brands36= [...brands]
-const brands37= [...brands]
-const brands38= [...brands]
-const brands39= [...brands]
-const brands40= [...brands]
-const brands41= [...brands]
-const brands42= [...brands]
-const brands43= [...brands]
-const brands44= [...brands]
-const brands45= [...brands]
-const brands46= [...brands]
-const brands47= [...brands]
-const brands48= [...brands]
-
-shuffle(brands1)
-shuffle(brands2)
-shuffle(brands3)
-shuffle(brands4)
-shuffle(brands5)
-shuffle(brands6)
-shuffle(brands7)
-shuffle(brands8)
-shuffle(brands9)
-shuffle(brands10)
-shuffle(brands11)
-shuffle(brands12)
-shuffle(brands13)
-shuffle(brands14)
-shuffle(brands15)
-shuffle(brands16)
-shuffle(brands17)
-shuffle(brands18)
-shuffle(brands19)
-shuffle(brands20)
-shuffle(brands21)
-shuffle(brands22)
-shuffle(brands23)
-shuffle(brands24)
-shuffle(brands25)
-shuffle(brands26)
-shuffle(brands27)
-shuffle(brands28)
-shuffle(brands29)
-shuffle(brands30)
-shuffle(brands31)
-shuffle(brands32)
-shuffle(brands33)
-shuffle(brands34)
-shuffle(brands35)
-shuffle(brands36)
-shuffle(brands37)
-shuffle(brands38)
-shuffle(brands39)
-shuffle(brands40)
-shuffle(brands41)
-shuffle(brands42)
-shuffle(brands43)
-shuffle(brands44)
-shuffle(brands45)
-shuffle(brands46)
-shuffle(brands47)
-shuffle(brands48)
-
-export const logos2560 = [
-    ...brands1,
-    ...brands2,
-    ...brands3,
-    ...brands4,
-    ...brands5,
-    ...brands6,
-    ...brands7,
-    ...brands8,
-    ...brands9,
-    ...brands10,
-    ...brands11,
-    ...brands12,
-    ...brands13,
-    ...brands14,
-    ...brands15,
-    ...brands16,
-    ...brands17,
-    ...brands18,
-    ...brands19,
-    ...brands20,
-    ...brands21,
-    ...brands22,
-    ...brands23,
-    ...brands24,
-    ...brands25,
-    ...brands26,
-    ...brands27,
-    ...brands28,
-    ...brands29,
-    ...brands30,
-    ...brands31,
-    ...brands32,
-    ...brands33,
-    ...brands34,
-    ...brands35,
-    ...brands36,
-    ...brands37,
-    ...brands38,
-    ...brands39,
-    ...brands40,
-    ...brands41,
-    ...brands42,
-    ...brands43,
-    ...brands44,
-    ...brands45,
-    ...brands46,
-    ...brands47,
-    ...brands48
-]
-
-export const logos1440 = [
-    ...brands1,
-    ...brands2,
-    ...brands3,
-    ...brands4,
-    ...brands5,
-    ...brands6,
-    ...brands7,
-    ...brands8,
-    ...brands9,
-    ...brands10,
-    ...brands11,
-    ...brands12,
-    ...brands13,
-    ...brands14,
-    ...brands15,
-    ...brands16,
-    ...brands17,
-    ...brands18,
-    ...brands19
-]
-
-export const logos1024 = [
-    ...brands1,
-    ...brands2,
-    ...brands3,
-    ...brands4,
-    ...brands5,
-    ...brands6,
-    ...brands7,
-    ...brands8,
-    ...brands9,
-    ...brands10,
-    ...brands11,
-    ...brands12,
-    ...brands13
-]
-
-export const logos768 = [
-    ...brands1,
-    ...brands2,
-    ...brands3,
-    ...brands4,
-    ...brands5,
-    ...brands6,
-    ...brands7,
-    ...brands8,
-    ...brands9
-]
-
-export const logos425 = [
-    ...brands1
 ]

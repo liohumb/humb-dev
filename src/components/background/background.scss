@@ -7,65 +7,20 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: .1rem;
+  gap: .5rem;
   z-index: 1;
 
-  &__ultraScreen {
-    @media (max-width: 1440px) {
-      display: none;
-    }
-  }
-
-  &__bigScreen{
-    display: none;
-
-    @media (max-width: 1440px) {
-      display: flex;
-    }
-
-    @media (max-width: 1024px) {
-      display: none;
-    }
-  }
-
-  &__laptopScreen {
-    display: none;
-
-    @media (max-width: 1024px) {
-      display: flex;
-    }
-
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
-
-  &__tableScreen {
-    display: none;
-
-    @media (max-width: 768px) {
-      display: flex;
-    }
-
-    @media (max-width: 425px) {
-      display: none;
-    }
-  }
-
-  &__mobileScreen {
-    display: none;
-
-    @media (max-width: 425px) {
-      display: flex;
-    }
-  }
-
   &__logo {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     filter: grayscale(1);
     opacity: .1;
     transition: all .1s linear;
+
+    @media (min-width: 1440px) {
+      width: 3vw;
+      height: 3vw;
+    }
 
     &:hover {
       filter: grayscale(0);
