@@ -17,7 +17,7 @@ export default function About() {
                         Web<span>.</span>
                         App<span>.</span>
                     </h1>
-                    <span className="about__subtitle">#React #Node #ThreeJS #JavaScript #ES6</span>
+                    <span className="about__subtitle">#React #Node #VueJS #ThreeJS #JavaScript #ES6</span>
                     <p className="about__description">
                         <span className="about__description-long">
                             Je suis un développeur web et web mobile créatif passionné par React, Node, React Native,
